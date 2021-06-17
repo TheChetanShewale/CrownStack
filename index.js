@@ -10,4 +10,3 @@ function App() {
 }
 
 AppRegistry.registerComponent(appName, () => App);
-
