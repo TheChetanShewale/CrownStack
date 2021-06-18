@@ -10,12 +10,27 @@ import Home from '../containers/home';
 import Details from '../containers/details';
 
 const splashNavigator = createStackNavigator({
-  splash: Splash,
+  splash: {
+    screen: Splash,
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
 });
 
 const appNavigator = createStackNavigator({
-  home: Home,
-  details: Details,
+  home: {
+    screen: Home,
+    navigationOptions: {
+      title: 'Songs',
+    },
+  },
+  details: {
+    screen: Details,
+    navigationOptions: {
+      title: 'Song Details',
+    },
+  },
 });
 
 const rootNavigator = createAnimatedSwitchNavigator(
