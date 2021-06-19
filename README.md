@@ -1,4 +1,4 @@
 ### Songs Demo Application
 
-![alt text]
+![Image of Yaktocat]
 (./screenshots/splash.png)
