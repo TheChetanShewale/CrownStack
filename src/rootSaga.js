@@ -1,5 +1,8 @@
-import {fork, all} from 'redux-saga/effects';
+//rootSaga.js - for centralized saga management in case of multiple sagas to be handled.
+import {fork} from 'redux-saga/effects';
+
+import homeSaga from './containers/home/saga';
 
 export default function* rootSaga() {
-  yield all([]);
+  yield fork(homeSaga);
 }

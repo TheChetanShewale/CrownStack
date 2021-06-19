@@ -1,3 +1,4 @@
+//navigation configuration for the screens
 import React from 'react';
 
 import {createAppContainer} from 'react-navigation';
@@ -9,6 +10,7 @@ import Splash from '../containers/splash';
 import Home from '../containers/home';
 import Details from '../containers/details';
 
+//splashNavigator to hold the splash screen
 const splashNavigator = createStackNavigator({
   splash: {
     screen: Splash,
@@ -18,6 +20,7 @@ const splashNavigator = createStackNavigator({
   },
 });
 
+//appNavigator to hold all the screens of app except splash screen
 const appNavigator = createStackNavigator({
   home: {
     screen: Home,
@@ -33,6 +36,7 @@ const appNavigator = createStackNavigator({
   },
 });
 
+//rootNavigator to hold all the other child navigations
 const rootNavigator = createAnimatedSwitchNavigator(
   {
     splashNav: splashNavigator,

@@ -1,8 +1,13 @@
+//configureStore.js - for centralized state management store configuration in case of multiple reducers.
 import createSagaMiddleware from 'redux-saga';
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import rootSaga from './rootSaga';
 
-const rootReducer = combineReducers({});
+import homeReducer from './containers/home/reducer';
+
+const rootReducer = combineReducers({
+  homeReducer,
+});
 
 const sagaMiddleware = createSagaMiddleware();
 
