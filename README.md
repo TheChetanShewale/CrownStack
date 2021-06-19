@@ -1,3 +1,3 @@
 ### Songs Demo Application
 
-![Image of Splash](./screenshots/splash.png) ![Image of Loading](./screenshots/loading.png)
+<img align="left" src="./screenshots/splash.png" alt="Splash" title="Splash" hspace="20"/>
