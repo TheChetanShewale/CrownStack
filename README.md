@@ -1,4 +1,4 @@
 ### Songs Demo Application
 
 ![Image of Yaktocat]
-(./screenshots/splash.png)
+(https://github.com/TheChetanShewale/CrownStack/blob/main/screenshots/splash.png)
